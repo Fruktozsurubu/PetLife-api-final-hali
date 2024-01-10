@@ -45,8 +45,7 @@ namespace PetLife.Controllers
                     Breed = request.Breed,
                 };
 
-                // Burada gelen pet verilerini işleyebilirsiniz
-                // Örneğin, bu verileri bir veritabanına kaydedebilirsiniz
+                
 
                 _context.Pets.Add(pet);
                 await _context.SaveChangesAsync();
@@ -79,6 +78,6 @@ namespace PetLife.Controllers
             return Convert.ToHexString(RandomNumberGenerator.GetBytes(lenght));
         }
 
-        // Diğer HTTP istekleri buraya eklenebilir: Güncelleme, Silme, Detaylar vs.
+        
     }
 }
